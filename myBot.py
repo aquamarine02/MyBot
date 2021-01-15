@@ -1,10 +1,11 @@
-import telebot
-import string
 import random
+import string
 
-from telebot import types
+import telebot
 
-bot = telebot.TeleBot('1445329637:AAH5a6YMN3s6lgTSE1cTBtcJHX4SxGCDkwc')
+import creds
+
+bot = telebot.TeleBot(creds.TELEGRAM_TOKEN)
 
 
 @bot.message_handler(commands=['start'])
