@@ -6,7 +6,7 @@ import creds
 bot = telebot.TeleBot(creds.TELEGRAM_TOKEN)
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start', 'help'])
 def start_message(message):
     bot.send_message(message.chat.id,
                      'Привет, ты написал мне /start. Введи цифру от одного до трех: 1 - простой пароль, 2 - пароль '
