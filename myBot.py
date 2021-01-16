@@ -1,8 +1,6 @@
 import random
 import string
-
 import telebot
-
 import creds
 
 bot = telebot.TeleBot(creds.TELEGRAM_TOKEN)
